@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script>
+    $(document).ready(function(){
+	  $('.gallery').fancybox({
+	  // Options will go here
+      });
+	});
+   
+  </script>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="JS_HW7_styles.css">
+</head>
+<body>
+  <h1>Photo Slideshow</h1>
+  <h2>Photos from my trip to Ireland</h2>
+   <div id="imgGallery">
+   <a href="carrick1.jpg" class="gallery" data-fancybox="myGallery" data-caption="Carrick-a-Rede">
+    <img src="carrick1.jpg" width="200" height="150" alt="">
+   </a>
+   <a href="carrick2.jpg" class="gallery" data-fancybox="myGallery" data-caption="Carrick-a-Rede">
+    <img src="carrick2.jpg" width="200" height="150" alt="">
+   </a>
+   <a href="causeway.jpg" class="gallery" data-fancybox="myGallery" data-caption="Giant's Causeway">
+    <img src="causeway.jpg" width="200" height="150" alt="">
+   </a>
+   <a href="hawthorn.jpg" class="gallery" data-fancybox="myGallery" data-caption="Hawthorn Tree">
+    <img src="hawthorn.jpg" width="200" height="150" alt="">
+   </a>
+   <a href="loughcrew.jpg" class="gallery" data-fancybox="myGallery" data-caption="Loughcrew Cairn">
+    <img src="loughcrew.jpg" width="200" height="150" alt="">
+   </a>
+   </div>
+</body>
+</html>

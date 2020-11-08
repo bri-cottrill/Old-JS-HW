@@ -1,0 +1,60 @@
+/*
+  Style Sheet for HW7
+  Written by Brianna Cottrill 11/27/2018
+*/
+
+body{
+	background-color:#226666;
+}
+
+h1{
+	text-align:center;
+}
+h2{
+	text-align:center;
+}
+
+a{
+	text-decoration: none;
+	color: #71266E;
+}
+
+.bodyDiv{
+	margin-left:auto;
+}
+
+#myForm{
+	margin-left:15%;
+	margin-top: 50px;
+}
+
+.descDiv{
+	text-align:center;
+	font-size: 18px;
+}
+
+/* For Part 3*/
+#imgGallery{
+	margin-left: 15%;
+	margin-top: 90px;	
+}
+
+
+/* For Part 2 */
+.hwMenu{
+	width: 125px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 7%;	
+	z-index:1;
+	background-color: #669999;
+	text-align: center;
+}
+
+.hwMenuItem{
+	width: 125px;
+	padding-bottom: 5px;
+	z-index:2;
+	position:absolute;
+	background-color: #669999;
+}

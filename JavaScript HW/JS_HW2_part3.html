@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="JS_HW2_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS_HW2_p3JS.js"></script>
+</head>
+<body>
+<!-- Nav Bar -->
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW2.html">Home</a></th>
+	<th><a href="JS_HW2_part1.html">Part 1</a></th>
+	<th><a href="JS_HW2_part2.html">Part 2</a></th>
+	<th><a href="JS_HW2_part3.html">Part 3</a></th>
+	<th><a href="JS_HW2_part4.html">Part 4</a></th>
+	<th><a href="JS_HW2_extra.html">Extra Credit</a></th>
+  </tr>
+</table>
+
+<!-- Form Inputs -->
+<h1>Part 3 - jQuery</h1>
+<div id="bodyDiv">
+<form>
+<table>
+  <tr>
+    <td>First Number:</td>
+    <td><input type="number" id="num1" size="10"></td>
+  </tr>
+  <tr>
+    <td>Second Number:</td>
+    <td><input type="number" id="num2" size="10"></td>
+  </tr>
+  <tr>
+    <td>Third Number:</td>
+    <td><input type="number" id="num3" size="10"></td>
+  </tr>
+  <tr>
+    <td>Fourth Number:</td>
+    <td><input type="number" id="num4" size="10"></td>
+  </tr>
+  <tr>
+    <td>Fifth Number:</td>
+    <td><input type="number" id="num5" size="10"></td>
+  </tr>
+</table>
+<input type="button" onclick="process()" value="Submit">
+<input type="reset" value="Reset">
+</form>
+<br>
+
+<!-- Display Results -->
+<h2>Results</h2>
+<div id="resultsTable" style="width:200px; height:200px; background-color:blue;"></div>
+<input type="button" id="fadebutton" value="Fade Results">
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*
+JS_HW1_styles.css
+Written by Brianna Cottrill
+08/21/2018
+
+Styles for HW 1: List of Homework Assignments
+*/
+
+body{
+	background-color: #9B6EA9;
+}
+
+h2{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: #613370;
+}
+
+table{
+	background-color: #FFF7C4;
+	margin-left: auto;
+	margin-right:auto;
+	border: 2px solid black;
+	width: 70%;
+
+}
+
+th, td{
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+tr.titleRow{
+	font-size: 32px;
+	color: #141A33;
+}
+
+tr.headerRow{
+	font-weight: bold;
+	font-size: 24px;
+	color: #141A33;
+}

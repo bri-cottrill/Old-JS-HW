@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calculation Table</title>
+  <link rel="stylesheet" href="JS_HW2_styles.css">
+</head>
+<body>
+<!-- Nav Bar -->
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW2.html">Home</a></th>
+	<th><a href="JS_HW2_part1.html">Part 1</a></th>
+	<th><a href="JS_HW2_part2.html">Part 2</a></th>
+	<th><a href="JS_HW2_part3.html">Part 3</a></th>
+	<th><a href="JS_HW2_part4.html">Part 4</a></th>
+	<th><a href="JS_HW2_extra.html">Extra Credit</a></th>
+  </tr>
+</table>
+<h1>Part 4 - Calculation Table</h1>
+<br><br>
+
+<!-- JS Script -->
+<script>
+  var i;
+  
+  document.write("<table class='powTable'>");
+  document.write("<tr><th>Number</th><th>Square</th><th>Cube</th></tr>");
+  
+  for(i = 1; i <= 6; i++){
+    document.write("<tr><td>" + i + "</td>");
+	document.write("<td>" + i*i + "</td>");
+	document.write("<td>" + i*i*i + "</td></tr>");
+  } 
+  document.write("</table>");
+</script>
+</body>
+</html>

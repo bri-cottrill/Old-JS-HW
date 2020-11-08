@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW5 state census search">
+  <title>Part 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="JS_HW5_p3js.js"></script>
+  <link rel="stylesheet" href="JS_HW5_styles.css">
+</head>
+<body>
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW5_cover.html">Home</a></th>
+    <th><a href="JS_HW5_part1.html">Part 1</a></th>
+    <th><a href="JS_HW5_part2.html">Part 2</a></th>
+    <th><a href="JS_HW5_part3.html">Part 3</a></th>
+  </tr>
+</table>
+
+<div id="bodyDiv">
+<h1>State Info Search</h1>
+  <form id="stateForm">
+    <label>Enter a state name or abbreviation: <br><input type="text" id="stateSearch" name="stateSearch" minlength="2"></label><br><br>
+	<input type="button" id="submitBtn" value="State Info" onclick="stateProcess();">
+  </form>
+  <br>
+  <div id="resultsDiv">
+  </div>
+</div>
+
+</body>
+</html>

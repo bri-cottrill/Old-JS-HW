@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 2</title>
+  <link rel="stylesheet" href="JS_HW7_styles.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+	  $('.hwMenuItem').hide();
+	  $('.hwMenu p').click(function(){
+	    var hw = $(this);
+		var menu = hw.next('.hwMenuItem');
+		
+		if(menu.css('display')=='none'){
+		  menu.slideDown(function(){
+		    hw.addClass('close');
+		  });
+		} else {
+		  menu.fadeOut(function(){
+		    hw.removeClass('close');
+		  });
+		}
+	  });//end .click
+	});//end .ready
+  </script>
+</head>
+<body>
+<h1>Homework Drop-Down Navigation Page</h1>
+<div class="hwMenu" id="hw1">
+  <p>HW1</p>
+  <div class="hwMenuItem">
+    <a href="JS_HW1.html">Cover Page</a>
+  </div>
+</div>
+<div class="hwMenu" id="hw2">
+  <p>HW2</p>
+  <div class="hwMenuItem">
+    <a href="JS_HW2.html">Cover Page</a> <br>
+    <a href="JS_HW2_part1.html">Part 1</a> <br>
+    <a href="JS_HW2_part2.html">Part 2</a> <br>
+    <a href="JS_HW2_part3.html">Part 3</a> <br> 
+    <a href="JS_HW2_part4.html">Part 4</a> <br>
+    <a href="JS_HW2_extra.html">Extra Credit</a>
+  </div>
+</div>
+<div class="hwMenu" id="hw3">
+  <p>HW3</p>
+  <div class="hwMenuItem">
+  <a href="JS_HW3_cover.html">Cover Page</a> <br>
+  <a href="JS_HW3_part1.html">Part 1</a> <br>
+  <a href="JS_HW3_part2.html">Part 2</a> <br>
+  <a href="JS_HW3_part3.html">Part 3</a> <br>
+  <a href="JS_HW3_part4.html">Part 4</a>
+  </div>
+</div>
+<div class="hwMenu" id="hw4">
+  <p>HW4</p>
+  <div class="hwMenuItem">
+    <a href="JS_HW4_cover.html">Cover Page</a> <br>
+    <a href="JS_HW4_part1.html">Part 1</a> <br>
+    <a href="JS_HW4_part2.html">Part 2</a> <br>
+    <a href="JS_HW4_extra.html">Extra Credit</a>
+  </div>
+</div>
+<div class="hwMenu" id="hw5">
+  <p>HW5</p>
+  <div class="hwMenuItem">
+    <a href="JS_HW5_cover.html">Cover Page</a><br>
+    <a href="JS_HW5_part1.html">Part 1</a><br>
+    <a href="JS_HW5_part2.html">Part 2</a><br>
+    <a href="JS_HW5_part3.html">Part 3</a>
+  </div>
+</div>
+<div class="hwMenu" id="hw6">
+  <p>HW6</p>
+  <div class="hwMenuItem">
+    <a href="JS_HW6_cover.html">Cover Page</a><br>
+    <a href="JS_HW6_part1.html">Part 1</a><br>
+    <a href="JS_HW6_part2.html">Part 2</a><br>
+    <a href="JS_HW6_part3.html">Part 3</a>
+  </div>
+</div>
+</body>
+</html>

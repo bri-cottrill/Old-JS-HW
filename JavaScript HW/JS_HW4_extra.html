@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW4 extra credit make a square">
+  
+  <title>Extra Credit</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  
+  <script src="JS_HW4_extjs.js"></script>
+  <link rel="stylesheet" href="JS_HW4_styles.css">
+</head>
+<body>
+  <table class="navBar">
+    <tr>
+	  <th><a href="JS_HW4_cover.html">Home</a></th>
+	  <th><a href="JS_HW4_part1.html">Part 1</a></th>
+	  <th><a href="JS_HW4_part2.html">Part 2</a></th>
+	  <th><a href="JS_HW4_extra.html">Extra Credit</a></th>
+	</tr>
+  </table>
+  
+  <div id="bodyDiv">
+    <h1>Make a Square</h1>
+    <form id="squareForm">
+	  <input type="number" max="10" min="2" id="numInput" name="numInput">
+	  <br>
+	  <input type="button" value="Submit" onclick="process()">
+	</form>
+	<div id="resultsDiv"></div>
+  </div>
+</body>
+</html>

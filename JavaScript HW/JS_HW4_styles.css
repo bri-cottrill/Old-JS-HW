@@ -1,0 +1,70 @@
+/*
+
+Stylesheet for CNIT 133 - JavaScript HW #4
+Written by: Brianna Cottrill
+
+*/
+
+body{
+	background-color: #E5D8D8;
+}
+
+table.navBar{
+	font-family: "Luida Console", Monaco, monospace;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+a:link{color: #B13939;}
+a:visited{color: #B59090;}
+a:active{color: #226A6A;}
+
+#bodyDiv{
+	margin-left: 150px;
+	width:100%;
+	margin-top:50px;
+	font-family: "Luida Console", Monaco, monospace;
+}
+
+/*  For Part 1  */
+#draggableFlower {
+	margin-left: 150px;
+	width: 300px;
+	height: 300px;
+}
+
+/*  For Part 2  */
+#interestTable {
+	background-color: #FFBE67;
+	border-collapse: collapse;
+}
+
+#firstRow{
+	background-color: #550000;
+	color: #FFFFFF;
+}
+
+#interestTable tr:nth-child(even){
+	background-color: #FF9367;	
+}
+
+#interestTable th {
+	padding: 10px;
+}
+
+#interestTable td {
+	text-align: center;
+}
+
+/*  For Extra Credit  */
+input, button {
+	font-family: "Luida Console", Monaco, monospace;
+}
+
+#resultsDiv{
+	margin-top: 20px;
+	font-weight: bold;
+	line-height: 60%;
+}

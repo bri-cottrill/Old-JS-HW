@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exchange Rates</title>
+  <link rel="stylesheet" href="JS_HW2_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS_HW2_extJS.js"></script>
+  <!-- <script></script> -->
+</head>
+<body>
+<!-- Nav Bar -->
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW2.html">Home</a></th>
+	<th><a href="JS_HW2_part1.html">Part 1</a></th>
+	<th><a href="JS_HW2_part2.html">Part 2</a></th>
+	<th><a href="JS_HW2_part3.html">Part 3</a></th>
+	<th><a href="JS_HW2_part4.html">Part 4</a></th>
+	<th><a href="JS_HW2_extra.html">Extra Credit</a></th>
+  </tr>
+</table>
+<h1>Extra Credit - Exchange Rates</h1>
+
+<div id="bodyDiv">
+<div id="clickSH">Click to Show/Hide Instructions</div>
+<div id="instructionsDiv">
+    The foreign exchange rates on August 29, 2018. <br>
+    Enter a dollar amount in the table below to see the corresponding foreign exchange values.
+</div>
+<div id="moneyDiv">
+    <form name="moneyform">
+      <table>
+        <tr><th colspan="3">Monetary Exchange Value</th></tr>
+        <tr>
+        <th>Currency</th><th>Rate</th><th>Value</th>
+        </tr>
+        <tr>
+        <td>British Pound</td>
+	    <td style="text-align:right;">.77</td>
+	    <td style="text-align:right;" id="pound"></td>
+        </tr>
+        <tr>
+        <td>Canadian Dollar</td>
+	    <td style="text-align:right;">1.29</td>
+	    <td style="text-align:right;" id="can"></td>
+        </tr>
+        <tr>
+        <td>Euro</td>
+	    <td style="text-align:right;">.85</td>
+	    <td style="text-align:right;" id="euro"></td>
+        </tr>
+        <tr>
+        <td>Japanese Yen</td>
+	    <td style="text-align:right;">111.63</td>
+	    <td style="text-align:right;" id="yen"></td>
+        </tr>
+        <tr>
+        <td>Mexican Peso</td>
+	    <td style="text-align:right;">18.97</td>
+	    <td style="text-align:right;" id="peso"></td>
+        </tr>
+        <tr>
+        <td colspan="2"><strong>Enter Amount of U.S. Dollars</strong></td>
+	    <td style="text-align:right;"><input type="text" id="us" size="6"></td>
+        </tr>  
+      </table>
+    <br>
+      <input type="button" id="calc" onclick="process()" value="Calculate">
+      <input type="reset" value="Clear" onclick="window.location.reload();">
+   </form>
+</div>
+
+
+</div>
+</body>
+</html>

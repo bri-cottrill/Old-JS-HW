@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW3 Student Grades">
+  <title>Student Grades</title>
+  
+  <link rel="stylesheet" href="JS_HW3_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="JS_HW3_p1js.js"></script>
+</head>
+<body>
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW3_cover.html">Home</a></th>
+    <th><a href="JS_HW3_part1.html">Part 1</a></th>
+    <th><a href="JS_HW3_part2.html">Part 2</a></th>
+    <th><a href="JS_HW3_part3.html">Part 3</a></th>
+    <th><a href="JS_HW3_part4.html">Part 4</a></th>
+  </tr>
+</table>
+
+<h1>Student Grades</h1>
+
+<div id="showDiv">Click to Show/Hide Instructions</div>
+<div id="instructionsDiv">The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers).
+</div>
+<br>
+
+<div id="formDiv">
+  <form id="gradesForm" name="gradesForm">
+  <table id="inputGradesTable">
+    <tr><td>Homework Average</td><td><input id="hwAverage" name="hwAverage" type="number" min="0" max="100" step="1"></td></tr>
+    <tr><td>Midterm Score</td><td><input id="midTerm" name="midTerm" type="number" min="0" max="100" step="1"></td></tr>
+    <tr><td>Final Exam Score</td><td><input id="finalExam" name="finalExam" type="number" min="0" max="100" step="1"></td></tr>
+    <tr><td>ACR</td><td><input id="ACR" name="ACR" type="number" min="0" max="100" step="1"></td></tr>
+  </table>
+
+  <input type="button" id="calc" onclick="calculateGrades()" value="Calculate">
+  <input type="reset" value="Clear" onclick="window.location.reload();">
+
+  
+  <table id="outputGradesTable">
+    <tr><td colspan="2"><strong>Results</strong></td></tr>
+    <tr><td>Final Average</td><td id="finalAverage"></td></tr>
+    <tr><td>Letter Grade</td><td id="letterGrade"></td></tr>
+    <tr><td id="passFail"></td></tr>
+  </table>
+  </form>
+</div>
+</body>
+</html>

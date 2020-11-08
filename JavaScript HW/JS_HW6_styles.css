@@ -1,0 +1,43 @@
+/*
+Style Sheet for HW6  Written by Brianna Cottrill 11/11/2018
+*/
+
+body{
+	background-color: #0C0919;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+a{color: #7E66DD;}
+
+table.navTable{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+table.navTable th {
+	padding-left:7px;
+	padding-right:7px;
+}
+
+table.navTable td{padding: 20px;}
+
+#bodyDiv{
+	border: 5px solid #FFAB00;
+	margin:0 auto;
+	width: 500px;
+	padding-left: 45px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+li{list-style-type: none;}
+
+#resultsArea{margin-top: 10px;}
+
+h1{text-align: center;}

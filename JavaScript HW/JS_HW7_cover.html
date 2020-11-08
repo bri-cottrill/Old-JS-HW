@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Homework 7 Cover Page</title>
+  <link rel="stylesheet" type="text/css" href="JS_HW7_styles.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+	  $('.descDiv').hide();
+	  $('.bodyDiv h2').click(function(){
+	    var h2 = $(this);
+		var desc = h2.next('.descDiv');
+		
+		if(desc.css('display')=='none'){
+		  desc.slideDown(function(){
+		    h2.addClass('close');
+		  });
+		} else {
+		  desc.fadeOut(function(){
+		    h2.removeClass('close');
+		  });
+		}
+	  }); //end .click
+	});//end .ready
+  </script>
+</head>
+<body>
+<h1>Homework 7 Cover Page</h1>
+<div class="bodyDiv">
+  <h2>Part 1</h2>
+  <div class="descDiv">
+    <p>User-determined page layout</p>
+	<p><a href="JS_HW7_part1.html">Link</a></p>
+  </div>
+  <h2>Part 2</h2>
+  <div class="descDiv">
+    <p>Drop-down navigation bar</p>
+	<p><a href="JS_HW7_part2.html">Link</a></p>
+  </div>  
+  <h2>Part 3</h2>
+  <div class="descDiv">
+    <p>jQuery photo-slide show</p>
+	<p><a href="JS_HW7_part3.html">Link</a></p>
+  </div>  
+</div>
+</body>
+</html>

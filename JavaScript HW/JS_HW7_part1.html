@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 1</title>
+  <script src="JS_HW7_p1js.js"></script>
+  <link rel="stylesheet" type="text/css" href="JS_HW7_styles.css">
+</head>
+<body id="theBody">
+<div class="bodyDiv" id="bodyDiv">
+<h1>Change up this page!</h1>
+
+<form id="myForm">
+<h3>Change the background color</h3>
+<input type="radio" name="colors" value="red"> Red <br>
+<input type="radio" name="colors" value="orange"> Orange <br>
+<input type="radio" name="colors" value="yellow"> Yellow <br>
+<input type="radio" name="colors" value="green"> Green <br>
+<input type="radio" name="colors" value="blue"> Blue <br>
+<input type="radio" name="colors" value="purple"> Purple <br> <br>
+<input type="button" value="Change Color!" onclick="changeBackground()">
+
+<h3>Change the font</h3>
+<input type="radio" name="fontFamilies" value='Georgia, serif'> Georgia <br> <!-- Georgia, serif -->
+<input type="radio" name="fontFamilies" value="Arial, Helvetica, sans-serif"> Arial <br> <!-- Arial, Helvetica, sans-serif -->
+<input type="radio" name="fontFamilies" value='"Courier New", Courier, monospace'> Courier <br><br> <!-- "Courier New", Courier, monospace -->
+<input type="button" value="Change the Font!" onclick="changeFontFam()">
+
+<h3>Italics? Bold? Both?</h3>
+<input type="button" value="Italics" onclick="changeFontStyle()">
+<input type="button" value="Bold" onclick="changeFontWeight()">
+<br>
+
+<h3>Change the font size</h3>
+<select name="fontSizes" onchange="changeFontSize()">
+  <option value="x-small">Tiny</option>
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+  <option value="x-large">Huge</option>
+</select>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW5 navigation menus">
+  <title>Part 2</title>
+  <script>
+    //For the sillySites nav menu that uses onclick
+    function goToNewPageClick(myForm){
+	    var mydest = myForm.sillySites.options[myForm.sillySites.selectedIndex].value;
+	    window.location = mydest;
+    }
+
+    //For the calmSites nav menu that uses onchange
+    function goToNewPageChange(myForm){
+	    var mydest = myForm.calmSites.options[myForm.calmSites.selectedIndex].value;
+	    window.location = mydest;
+    }
+  </script>
+  <link rel="stylesheet" href="JS_HW5_styles.css">
+</head>
+<body>
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW5_cover.html">Home</a></th>
+    <th><a href="JS_HW5_part1.html">Part 1</a></th>
+    <th><a href="JS_HW5_part2.html">Part 2</a></th>
+    <th><a href="JS_HW5_part3.html">Part 3</a></th>
+  </tr>
+</table>
+
+<div id="bodyDiv">
+<h1>Menu Navigation</h1>
+<form id="navForm">
+  <select name="sillySites">
+    <option value="https://cat-bounce.com/">Cat-Bounce</option>
+	<option value="http://www.koalastothemax.com/">Koalas to the Max</option>
+	<option value="http://chickenonaraft.com/">Chicken on a Raft</option>
+	<option value="http://www.patience-is-a-virtue.org/">Patience is a Virtue</option>
+	<option value="https://www.theworldsworstwebsiteever.com/">World's Worst Website</option>
+  </select><br>
+  <input type="button" value="Go" onclick="goToNewPageClick(this.form);"><br><br>
+
+  <select name="calmSites" onchange="goToNewPageChange(this.form);">
+    <option>Choose website:</option>
+    <option value="http://www.rainymood.com/">Rainy Mood</option>
+	<option value="http://soundrown.com/">Soundrown</option>
+	<option value="http://www.physicsgames.net/game/Sleepy.html">Sleepy Game</option>
+	<option value="http://www.yesnoif.com/">YesNoIf</option>
+	<option value="http://randomcolour.com/">Random Colour</option>
+  </select>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/*
+   CSS for HW5 Written by Brianna Cottrill 10/28/2018
+*/
+
+body{
+	background-color: #38CFA5;
+	font-size: 16px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+table.navTable{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+table.navTable th {
+	padding-left:7px;
+	padding-right:7px;
+}
+
+table.navTable td{padding: 20px;}
+
+#bodyDiv{
+	border: 5px solid black;
+	margin:0 auto;
+	width: 500px;
+	padding-left: 45px;
+	padding-bottom: 20px;
+	background-color: #71FDD6;
+}
+
+h1{	color: #AD3620;}
+
+a{
+	color: #1A4B70;
+	text-decoration:none;
+}
+
+input, button, select {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.error{
+	color: #AD3620;
+	font-style: italic;
+}

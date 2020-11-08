@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW3 Sales Earnings">
+  <title>Sales Earnings</title>
+  <link rel="stylesheet" href="JS_HW3_styles.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="JS_HW3_p2js.js"></script>
+</head>
+<body>
+
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW3_cover.html">Home</a></th>
+    <th><a href="JS_HW3_part1.html">Part 1</a></th>
+    <th><a href="JS_HW3_part2.html">Part 2</a></th>
+    <th><a href="JS_HW3_part3.html">Part 3</a></th>
+    <th><a href="JS_HW3_part4.html">Part 4</a></th>
+  </tr>
+</table>
+
+<h1>Calculate Salesperson's Weekly Earnings</h1>
+
+<div id="formDiv"> 
+  <form id="salesForm" name="salesForm">
+    <table id="personTable">
+	  <tr><td>Salesperson: </td> <td><input id="inputPerson" type="text" title="Please make sure that the salesperson's name is spelled correctly"></td></tr>
+	</table>
+    <h2>Input the number of items sold for each item number:</h2>
+	<table id="itemsTable">
+	  <tr><td>Item 1:</td><td><input id="item1" name="item1" type="number"></td></tr>
+	  <tr><td>Item 2:</td><td><input id="item2" name="item2" type="number"></td></tr>
+	  <tr><td>Item 3:</td><td><input id="item3" name="item3" type="number"></td></tr>
+	  <tr><td>Item 4:</td><td><input id="item4" name="item4" type="number"></td></tr>
+	</table>
+    <input type="button" id="sumbit" onclick="calculateEarnings();" value="Submit">
+    <input type="reset" value="Clear" onclick="window.location.reload();">
+	<table id="salesTable"> 
+	  <tr><th>Item #</th><th>Price</th><th>Number Sold</th><th>Total</th></tr>
+	  <!-- note: maybe add a class for numSold and itemSold for css purposes-->
+	  <tr><td>1</td><td class="amts">$239.99</td><td id="numSold1" class="amts"></td><td id="itemSold1" class="amts"></td></tr>
+	  <tr><td>2</td><td class="amts">$129.75</td><td id="numSold2" class="amts"></td><td id="itemSold2" class="amts"></td></tr>
+	  <tr><td>3</td><td class="amts">$99.95</td><td id="numSold3" class="amts"></td><td id="itemSold3" class="amts"></td></tr>
+	  <tr><td>4</td><td class="amts">$350.89</td><td id="numSold4" class="amts"></td><td id="itemSold4" class="amts"></td></tr>
+	  <tr><td colspan="3">Total Amount Sold</td><td id="amtSold" class="amts"></td></tr>
+	  <tr><td colspan="3">Total Weekly Earnings</td><td id="wklyEarnings" class="amts"></td></tr>
+	</table>
+  </form>
+</div>
+</body>
+</html>

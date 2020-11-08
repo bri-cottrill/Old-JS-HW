@@ -1,0 +1,78 @@
+
+body{
+	background-color: #13CBCB;
+}
+
+table.navTable{
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	border:1px solid black;
+	padding:10px;
+	font-size:20px;
+}
+
+table.navTable th {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+a{
+	color:#285CD4;
+}
+
+h1{
+	color: #FF1818;
+	font-family:georgia;
+	margin-left:auto;
+	margin-right:auto;	
+	text-align:center;
+}
+
+#formDiv{
+	margin-left: 100px;	
+}
+
+input[type=number]{
+	text-align:right;
+}
+
+/* For Part 1 */
+#instructionsDiv{
+	display:none;
+	margin-left: 100px;
+	width:300px;
+}
+
+#showDiv{
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-left: 100px;
+}
+
+#inputGradesTable{
+	margin-bottom:5px;
+}
+#inputGradesTable td{
+	padding-right: 10px;
+}
+
+#outputGradesTable{
+	margin-top:15px;
+}
+
+/* For Part 2 */
+#itemsTable{
+	margin-bottom:5px;
+}
+
+#salesTable{
+	margin-top:5px;
+}
+#salesTable td, th{
+	padding-right:10px;
+}
+
+td.amts{
+	text-align:right;
+}

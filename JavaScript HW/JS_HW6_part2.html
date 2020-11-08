@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 2</title>
+  <script src="JS_HW6_p2js.js"></script>
+  <link rel="stylesheet" href="JS_HW6_styles.css">
+</head>
+<body>
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW6_cover.html">Home</a></th>
+    <th><a href="JS_HW6_part1.html">Part 1</a></th>
+    <th><a href="JS_HW6_part2.html">Part 2</a></th>
+    <th><a href="JS_HW6_part3.html">Part 3</a></th>
+  </tr>
+</table>
+
+<h1>Part 2 - Text Search</h1>
+<div id="bodyDiv">
+Add some text here: <br>
+<textarea id="inputArea" cols="50" rows="10" form="inputForm"></textarea><br>
+
+<form id="inputForm">
+Enter the letter you want to search:
+<input type="text" id="charInput"><br>
+<input type="button" id="submitBTN" value="Search" onclick="processText()">
+<input type="reset" value="Clear" onclick="clearPage()"><br>
+
+Results <br>
+<textarea id="resultsArea" cols="50" rows="10" disabled></textarea>
+</form>
+</div>
+</body>
+</html>

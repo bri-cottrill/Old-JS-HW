@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>  
+  <script src="JS_HW6_p1js.js"></script>
+  <link rel="stylesheet" href="JS_HW6_styles.css">
+</head>
+<body>
+<table class="navTable">
+  <tr>
+    <th><a href="JS_HW6_cover.html">Home</a></th>
+    <th><a href="JS_HW6_part1.html">Part 1</a></th>
+    <th><a href="JS_HW6_part2.html">Part 2</a></th>
+    <th><a href="JS_HW6_part3.html">Part 3</a></th>
+  </tr>
+</table>
+
+<h1>Part 1 - Decimal Places</h1>
+<div id="bodyDiv">
+<form id="inputForm">
+  Please input a number with at least 4 decimal places:
+  <input type="number" id="numInput" name="numInput" step="0.0001"><br>
+  <input type="button" id="submitBTN" value="Submit" onclick="processNumber()">
+  <input type="reset" value="Clear" onclick="clearPage()"><br>
+</form>
+<textarea id="resultsArea" cols="50" rows="10" disabled></textarea>
+</div>
+
+</body>
+</html>

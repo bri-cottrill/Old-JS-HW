@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 HW4 part 1 loops">
+  
+  <title>Part 1</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Note: Placing my script AFTER the jQuery scripts made draggable work -->
+  <script src="JS_HW4_p1js.js"></script>
+  <link rel="stylesheet" href="JS_HW4_styles.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body onload="process()">
+  <table class="navBar">
+    <tr>
+	  <th><a href="JS_HW4_cover.html">Home</a></th>
+	  <th><a href="JS_HW4_part1.html">Part 1</a></th>
+	  <th><a href="JS_HW4_part2.html">Part 2</a></th>
+	  <th><a href="JS_HW4_extra.html">Extra Credit</a></th>
+	</tr>
+  </table>
+  
+  <div id="bodyDiv" class='draggable'></div>
+  
+  <div id="draggableFlower" class="draggable">
+    <img src='flower.png' id='flower' width='250' height='250' alt='a black flower icon' title='draggable flower'>
+  </div>
+</body>
+</html>
